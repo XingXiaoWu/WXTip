@@ -4,7 +4,7 @@ const { wxtip } = NativeModules;
 export class WXTip {
     static showToast(message) {
         if (Platform.OS === 'ios') {
-            wxnative.showToast(message)
+            wxtip.showToast(message)
         } else {
             ToastAndroid.show(message, 2)
         }
