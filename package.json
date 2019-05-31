@@ -1,0 +1,28 @@
+
+{
+  "name": "react-native-wxtip",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+      "name": "wuxing",
+      "email": "329106954@qq.com"
+  },
+  "repository": {
+      "type": "git",
+      "url":"git@github.com:XingXiaoWu/WXTip.git"
+  },
+  "keywords": [
+    "react-native",
+    "toast",
+    "loading",
+    "tip"
+  ],
+  "license": "",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
