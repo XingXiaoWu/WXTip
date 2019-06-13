@@ -22,7 +22,10 @@ RCT_EXPORT_MODULE(wxtip)
 //普通loading
 RCT_EXPORT_METHOD(showLoading){
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIWindow *window = [UIApplication sharedApplication].delegate.window;
+        //        非移除状态init
+        if(self.hud){
+            [self.hud hideAnimated:YES];
+        }
         self.hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
     });
 }
