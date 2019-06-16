@@ -19,7 +19,7 @@ iOS为封装MBProgressHUD
 
 如果你需要自定义图片(Android暂不支持),请往下看
 
-### 3.iOS上
+### 3.iOS上(看不懂步骤的,拉倒最下面看图示)
 1. 打开你的项目  选中你的target  ➜ Build Phases ➜ Copy Bundle Resources
 2. 打开library,找到RNWxtip.xcodeproj ➜ WxtipBundle.bundle
 3. 将WxtipBundle.bundle拖动到Copy Bundle Resources中
@@ -44,3 +44,14 @@ WXTip.dismissLoading();
 WXTip.showToast("hello world");
 
 ```
+
+
+
+
+
+
+
+## iOS图示
+![ios1](./READEME/image1.png)
+![ios2](./READEME/image2.png)
+![ios3](./READEME/image3.png)
