@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1074388722B5FC580077C634 /* bbb.png in Resources */ = {isa = PBXBuildFile; fileRef = 1074388622B5FC580077C634 /* bbb.png */; };
 		10D43BE422A0EE01001687B7 /* RNWxtip.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D43BDC22A0EE01001687B7 /* RNWxtip.m */; };
 		10D43BE522A0EE01001687B7 /* ZHBPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D43BE022A0EE01001687B7 /* ZHBPopTipView.m */; };
 		10D43BE622A0EE01001687B7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D43BE222A0EE01001687B7 /* MBProgressHUD.m */; };
@@ -26,9 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1074388022B5FC380077C634 /* WxtipBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WxtipBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		1074388222B5FC380077C634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1074388622B5FC580077C634 /* bbb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bbb.png; sourceTree = "<group>"; };
+		1074392922B6172F0077C634 /* WxtipBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WxtipBundle.bundle; sourceTree = "<group>"; };
 		10D43BDC22A0EE01001687B7 /* RNWxtip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWxtip.m; sourceTree = "<group>"; };
 		10D43BDD22A0EE01001687B7 /* RNWxtip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNWxtip.h; sourceTree = "<group>"; };
 		10D43BDF22A0EE01001687B7 /* ZHBPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHBPopTipView.h; sourceTree = "<group>"; };
@@ -39,13 +36,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1074387D22B5FC380077C634 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58B511D81A9E6C8500147676 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,15 +46,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1074388122B5FC380077C634 /* WxtipBundle */ = {
-			isa = PBXGroup;
-			children = (
-				1074388622B5FC580077C634 /* bbb.png */,
-				1074388222B5FC380077C634 /* Info.plist */,
-			);
-			path = WxtipBundle;
-			sourceTree = "<group>";
-		};
 		10D43BDB22A0EE01001687B7 /* RNWxtip */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,32 +87,14 @@
 				10D43BE122A0EE01001687B7 /* MBProgressHUD */,
 				10D43BDB22A0EE01001687B7 /* RNWxtip */,
 				10D43BDE22A0EE01001687B7 /* ZHBPopTipView */,
-				1074388122B5FC380077C634 /* WxtipBundle */,
+				1074392922B6172F0077C634 /* WxtipBundle.bundle */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				1074388022B5FC380077C634 /* WxtipBundle.bundle */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1074387F22B5FC380077C634 /* WxtipBundle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1074388522B5FC380077C634 /* Build configuration list for PBXNativeTarget "WxtipBundle" */;
-			buildPhases = (
-				1074387C22B5FC380077C634 /* Sources */,
-				1074387D22B5FC380077C634 /* Frameworks */,
-				1074387E22B5FC380077C634 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WxtipBundle;
-			productName = WxtipBundle;
-			productReference = 1074388022B5FC380077C634 /* WxtipBundle.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		58B511DA1A9E6C8500147676 /* RNWxtip */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNWxtip" */;
@@ -158,10 +121,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
-					1074387F22B5FC380077C634 = {
-						CreatedOnToolsVersion = 10.2.1;
-						ProvisioningStyle = Automatic;
-					};
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -181,30 +140,11 @@
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNWxtip */,
-				1074387F22B5FC380077C634 /* WxtipBundle */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		1074387E22B5FC380077C634 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1074388722B5FC580077C634 /* bbb.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		1074387C22B5FC380077C634 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,76 +158,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1074388322B5FC380077C634 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = WxtipBundle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wx.WxtipBundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		1074388422B5FC380077C634 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = WxtipBundle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wx.WxtipBundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		58B511ED1A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,15 +272,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1074388522B5FC380077C634 /* Build configuration list for PBXNativeTarget "WxtipBundle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1074388322B5FC380077C634 /* Debug */,
-				1074388422B5FC380077C634 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNWxtip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
