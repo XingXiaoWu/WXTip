@@ -29,6 +29,12 @@ RCT_EXPORT_METHOD(showLoading){
             [self.hud hideAnimated:YES];
         }
         self.hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
+        //        loading背景透明
+        self.hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+        self.hud.bezelView.color = [UIColor clearColor];
+        //        整个背景蒙版
+        self.hud.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
+        self.hud.backgroundView.color = [UIColor colorWithWhite:0.f alpha:0.1f];
     });
 }
 //
@@ -46,13 +52,13 @@ RCT_EXPORT_METHOD(showToast:(NSString*)message){
 }
 
 #pragma mark -- 带图片的Loading
-RCT_EXPORT_METHOD(showLoadingWirhImage){
+RCT_EXPORT_METHOD(showLoadingWithImage){
     dispatch_async(dispatch_get_main_queue(), ^{
          UIWindow *window = [UIApplication sharedApplication].delegate.window;
         if (!self.loadingImageView) {
             NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"WxtipBundle" ofType:@"bundle"]];
             // 找到对应images夹下的图片
-            NSString *loadingImagePath = [bundle pathForResource:@"bbb" ofType:@"png"];
+            NSString *loadingImagePath = [bundle pathForResource:@"loading" ofType:@"png"];
             UIImage *loadingImage = [UIImage imageWithContentsOfFile:loadingImagePath];
             self.loadingImageView = [[UIImageView alloc] initWithImage:loadingImage];
         }
@@ -61,7 +67,12 @@ RCT_EXPORT_METHOD(showLoadingWirhImage){
             [self.hud hideAnimated:YES];
         }
         self.hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
-        
+//        loading背景透明
+        self.hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+        self.hud.bezelView.color = [UIColor clearColor];
+//        整个背景蒙版
+        self.hud.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
+        self.hud.backgroundView.color = [UIColor colorWithWhite:0.f alpha:0.1f];
         
         self.hud.customView = self.loadingImageView;
         CABasicAnimation *animation =  [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];

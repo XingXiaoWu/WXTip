@@ -18,9 +18,9 @@ export class WXTip {
         wxtip.dismissLoading()
     }
 
-    static showLoadingWirhImage() {
+    static showLoadingWithImage() {
         if (Platform.OS === 'ios') {
-            wxtip.showLoadingWirhImage()
+            wxtip.showLoadingWithImage()
         } else {
             wxtip.showLoading()
         }
